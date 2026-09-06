@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Health {
-    @GetMapping
+    @GetMapping("/health")
     public String serverHealth() {
         return "Server Healthy, Up and running!";
     }
